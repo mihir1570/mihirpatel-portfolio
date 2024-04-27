@@ -78,11 +78,6 @@ $(function(){
     }).scroll();
 
 
-
-
-
-
-
     if ($('.testimonial-slider').length) {
         var testimonial = $('.testimonial-slider').owlCarousel({
             items: 1,
