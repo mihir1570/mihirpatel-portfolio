@@ -146,6 +146,19 @@
 }
 
 @media (max-width: 767px) {
+
+    .responsive-sidebar-menu .sidebar-menu-inner {
+        max-width: 300px;
+        width: 100%;
+        margin-left: auto;
+        background: #191919;
+        height: 100%;
+        overflow-x: hidden;
+        padding-top: 50px;
+        margin-right: -250px;
+        transition: .3s;
+    }
+
     .icon-menu {
         right: 30px;
         top: 30px;
