@@ -2282,3 +2282,7 @@ body .body-overlay {
 .global-color .setting-toggle i {
     animation: rotating 3s infinite linear !important;
 }
+
+.selectSubect {
+    background-color: #1F1F1F;
+}
