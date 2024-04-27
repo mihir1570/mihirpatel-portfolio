@@ -147,7 +147,7 @@
 
 @media (max-width: 767px) {
 
-    /* .responsive-sidebar-menu .sidebar-menu-inner {
+    .responsive-sidebar-menu .sidebar-menu-inner {
         max-width: 300px;
         width: 100%;
         margin-left: auto;
@@ -157,7 +157,7 @@
         padding-top: 50px;
         margin-right: -250px;
         transition: .3s;
-    } */
+    }
 
     .icon-menu {
         right: 30px;
