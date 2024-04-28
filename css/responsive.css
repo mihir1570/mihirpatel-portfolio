@@ -55,7 +55,7 @@
 
     .left-sidebar {
         position: relative;
-        max-width: 767px;
+        max-width: 650px;
         left: 0;
         margin: auto;
         top: 0;
@@ -143,6 +143,7 @@
     .hero-section .hero-content .facts h1 {
         font-size: 52px;
     }
+
 }
 
 @media (max-width: 767px) {
@@ -157,6 +158,17 @@
         padding-top: 50px;
         margin-right: -250px;
         transition: .3s;
+    }
+
+    .left-sidebar {
+        position: relative;
+        max-width: 380px;
+        left: 0;
+        margin: auto;
+        top: 0;
+        transform: translateY(0);
+        margin-top: 20px;
+        display: none;
     }
 
     .icon-menu {
@@ -409,6 +421,32 @@
     .comments-area .comments .children {
         padding-left: 40px;
     }
+
+
+    .responsive-sidebar-menu .sidebar-menu-inner {
+        max-width: 250px;
+        width: 100%;
+        margin-left: auto;
+        background: #191919;
+        height: 100%;
+        overflow-x: hidden;
+        padding-top: 50px;
+        margin-right: -250px;
+        transition: .3s;
+    }
+
+    .left-sidebar {
+        align-items: center;
+        position: relative;
+        max-width: 390px;
+        left: 0;
+        margin: auto;
+        top: 0;
+        transform: translateY(0);
+        margin-top: 20px;
+        display: none;
+    }
+
 }
 
 @media (max-width: 425px) {
@@ -422,4 +460,63 @@
         margin-left: 26px;
         margin-top: 10px;
     }
+
+    .responsive-sidebar-menu .sidebar-menu-inner {
+        max-width: 250px;
+        width: 100%;
+        margin-left: auto;
+        background: #191919;
+        height: 100%;
+        overflow-x: hidden;
+        padding-top: 50px;
+        margin-right: -250px;
+        transition: .3s;
+    }
+
+    .left-sidebar {
+        align-items: center;
+        position: relative;
+        max-width: 380px;
+        left: 0;
+        margin: auto;
+        top: 0;
+        transform: translateY(0);
+        margin-top: 20px;
+        display: none;
+    }
+}
+
+
+
+  @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 568px) 
+    and (-webkit-device-pixel-ratio: 2) {
+    /* Your CSS styles for iPhone SE here */
+
+    .responsive-sidebar-menu .sidebar-menu-inner {
+        max-width: 250px;
+        width: 100%;
+        margin-left: auto;
+        background: #191919;
+        height: 100%;
+        overflow-x: hidden;
+        padding-top: 50px;
+        margin-right: -250px;
+        transition: .3s;
+    }
+
+    .left-sidebar {
+        align-items: center;
+        position: relative;
+        max-width: 360px;
+        left: 0;
+        margin: auto;
+        top: 0;
+        transform: translateY(0);
+        margin-top: 20px;
+        display: none;
+    }
+
+
 }
