@@ -448,6 +448,11 @@
         display: none;
     }
 
+    .hero-section .hero-content .go-to-project-btn {
+        margin-left: 0;
+        margin-top: 36px;
+    }
+
 }
 
 @media (max-width: 425px) {
@@ -485,6 +490,11 @@
         margin-top: 20px;
         display: none;
     }
+
+    .hero-section .hero-content .go-to-project-btn {
+        margin-left: 0;
+        margin-top: 36px;
+    }
 }
 
 
@@ -519,5 +529,9 @@
         display: none;
     }
 
+    .hero-section .hero-content .go-to-project-btn {
+        margin-left: 0;
+        margin-top: 36px;
+    }
 
 }
