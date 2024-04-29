@@ -218,6 +218,6 @@
 
 @media only screen and (max-width: 600px) {
     .glowing-btn {
-        font-size: 1em;
+        font-size: 0.7em;
     }
 }
