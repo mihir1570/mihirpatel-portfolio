@@ -20,7 +20,7 @@
     background: none;
     perspective: 2em;
     font-family: "Raleway", sans-serif;
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: 600;
     letter-spacing: 0.5em;
 
@@ -218,6 +218,6 @@
 
 @media only screen and (max-width: 600px) {
     .glowing-btn {
-        font-size: 0.5em;
+        font-size: 0.7em;
     }
 }
