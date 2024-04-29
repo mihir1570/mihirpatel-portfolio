@@ -503,9 +503,37 @@
                                 <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
                                     <div class="portfolio-item portfolio-full">
                                         <div class="portfolio-item-inner">
+                                            <!-- <a href="./images/Screenshot (58).png" data-lightbox="example-1">
+                                                <img src="images/dashboard.png" alt="Portfolio" 
+                                                     style="display: block;" class="desktop-img">
+                                                <img src="images/mobile-dashboard.png" alt="Mobile Portfolio" 
+                                                     style="display: none;" class="mobile-img">
+                                            </a> -->
+                                            
+
                                             <a href="./images/Screenshot (58).png" data-lightbox="example-1">
-                                                <img src="images/dashboard.png" alt="Portfolio">
+                                                <picture>
+                                                    <!-- Specify the smaller image for smaller screen sizes -->
+                                                    <source media="(max-width: 700px)" srcset="./images/dashboard_mobile.png">
+                                                    <!-- Specify the default image for larger screen sizes -->
+                                                    <img src="images/dashboard.png" alt="portfolio">
+                                                </picture>
                                             </a>
+
+
+                                            <style>
+                                                /* Media query for screens smaller than 768px (typical mobile devices) */
+                                                @media only screen and (max-width: 768px) {
+                                                    .desktop-img {
+                                                        display: none;
+                                                    }
+                                            
+                                                    .mobile-img {
+                                                        display: block;
+                                                    }
+                                                }
+                                            </style>
+                                            
 
                                             <a href="./images/user_1.png" data-lightbox="example-1">
                                                 <img src="images/dashboard.png" alt="Portfolio">
@@ -627,7 +655,12 @@
                                     <div class="portfolio-item portfolio-half">
                                         <div class="portfolio-item-inner">
                                             <a href="./images/Food_app_flutter.png" data-lightbox="example-1">
-                                                <img src="./images/Food_app_flutter.png" alt="portfolio">
+                                                <picture>
+                                                    <!-- Specify the smaller image for smaller screen sizes -->
+                                                    <source media="(max-width: 700px)" srcset="./images/Food_mobile.png">
+                                                    <!-- Specify the default image for larger screen sizes -->
+                                                    <img src="images/Food_app_flutter.png" alt="portfolio">
+                                                </picture>
                                             </a>
 
                                             <ul class="portfolio-categories">
@@ -646,9 +679,16 @@
                                 <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
                                     <div class="portfolio-item portfolio-half">
                                         <div class="portfolio-item-inner">
+                                           
                                             <a href="./images/gobid.png" data-lightbox="example-1">
-                                                <img src="images/gobid.png" alt="portfolio">
+                                                <picture>
+                                                    <!-- Specify the smaller image for smaller screen sizes -->
+                                                    <source media="(max-width: 700px)" srcset="./images/gobid_mobile.png">
+                                                    <!-- Specify the default image for larger screen sizes -->
+                                                    <img src="images/gobid.png" alt="portfolio">
+                                                </picture>
                                             </a>
+                                            
 
                                             <ul class="portfolio-categories">
                                                 <li>
