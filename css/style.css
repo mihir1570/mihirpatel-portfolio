@@ -2241,8 +2241,6 @@ body .body-overlay {
 }
 
 
-
-
 /* @Keyframe */
 @keyframes rotating {
     0% {
@@ -2286,3 +2284,4 @@ body .body-overlay {
 .selectSubect {
     background-color: #1F1F1F;
 }
+
