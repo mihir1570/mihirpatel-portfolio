@@ -2284,3 +2284,31 @@ body .body-overlay {
 .selectSubect {
     background-color: #1F1F1F;
 }
+
+
+
+
+
+
+
+
+
+/* ------// New Heropage Background design CSS//------- */
+
+
+.grid-svg {
+    background-image: url(../images/grid-svg.svg);
+    z-index: 1;
+}
+
+.blur {
+    height: 11rem;
+    width: 11rem;
+    background-color: var(--primary_color);
+    filter: blur(100px);
+    border-radius: 100px;
+    z-index: 0;
+    position: absolute;
+}
+
+

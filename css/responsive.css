@@ -132,6 +132,16 @@
     .blog-three-columns-main .blog-content-area .row>.col-md-4 {
         width: 50%;
     }
+    .blur {
+        margin-top: 12%;
+        height: 9rem;
+        width: 10rem;
+        background-color: var(--primary_color);
+        filter: blur(90px);
+        border-radius: 100px;
+        z-index: 0;
+        position: absolute;
+    }
 }
 
 @media (max-width: 787px) {
@@ -142,6 +152,18 @@
 
     .hero-section .hero-content .facts h1 {
         font-size: 52px;
+    }
+    .blur {
+        /* display: none; */
+        margin-left: 40%;
+        margin-top: 0;
+        height: 5.5rem;
+        width: 10rem;
+        background-color: var(--primary_color);
+        filter: blur(70px);
+        border-radius: 100px;
+        z-index: 0;
+        position: absolute;
     }
 
 }
@@ -351,6 +373,18 @@
         padding: 10px;
        
     }
+
+    .blur {
+        /* display: none; */
+        margin-left: 40%;
+        height: 5.5rem;
+        width: 10rem;
+        background-color: var(--primary_color);
+        filter: blur(70px);
+        border-radius: 100px;
+        z-index: 0;
+        position: absolute;
+    }
 }
 
 @media (max-width: 584px) {
@@ -455,6 +489,19 @@
         display: none;
     }
 
+    .blur {
+        /* display: none; */
+        margin-top: 15%;
+        margin-left: 0;
+        height: 7rem;
+        width: 10rem;
+        background-color: var(--primary_color);
+        filter: blur(90px);
+        border-radius: 100px;
+        z-index: 0;
+        position: absolute;
+    }
+
 }
 
 @media (max-width: 425px) {
@@ -492,6 +539,19 @@
         margin-top: 20px;
         display: none;
     }
+
+    .blur {
+        /* display: none; */
+        margin-top: 15%;
+        margin-left: 0;
+        height: 7rem;
+        width: 10rem;
+        background-color: var(--primary_color);
+        filter: blur(90px);
+        border-radius: 100px;
+        z-index: 0;
+        position: absolute;
+    }
 }
 
 
@@ -500,7 +560,6 @@
     and (min-device-width: 320px) 
     and (max-device-width: 568px) 
     and (-webkit-device-pixel-ratio: 2) {
-    /* Your CSS styles for iPhone SE here */
 
     .responsive-sidebar-menu .sidebar-menu-inner {
         max-width: 250px;
@@ -525,6 +584,5 @@
         margin-top: 20px;
         display: none;
     }
-
 
 }
