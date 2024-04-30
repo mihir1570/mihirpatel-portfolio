@@ -2302,6 +2302,7 @@ body .body-overlay {
 }
 
 .blur {
+    margin-left: 50%;
     height: 11rem;
     width: 11rem;
     background-color: var(--primary_color);

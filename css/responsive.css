@@ -126,6 +126,19 @@
     .pricing-table-items .pricing-table .theme-btn {
         padding: 11px 40px 10px 40px;
     }
+
+    .blur {
+        /* display: none; */
+        margin-top: 12%;
+        margin-left: 2px;
+        height: 9rem;
+        width: 10rem;
+        background-color: var(--primary_color);
+        filter: blur(90px);
+        border-radius: 100px;
+        z-index: 0;
+        position: absolute;
+    }
 }
 
 @media (max-width: 977px) {
@@ -133,7 +146,9 @@
         width: 50%;
     }
     .blur {
+        /* display: none; */
         margin-top: 12%;
+        margin-left: 2px;
         height: 9rem;
         width: 10rem;
         background-color: var(--primary_color);
