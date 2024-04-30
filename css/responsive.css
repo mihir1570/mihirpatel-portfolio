@@ -104,7 +104,7 @@
 
     .services-items .service-item {
         margin-bottom: 0;
-        padding: 36px 36px 36px 36px;
+        padding: 30px 30px 30px 30px;
         width: 33.3333%;
     }
 
@@ -402,7 +402,7 @@
     }
 
     .services-items .service-item {  
-        padding: 40px 40px 40px 40px;
+        padding: 32px 36px 32px 36px;
     }
 }
 
@@ -613,14 +613,14 @@
         display: none;
     }
 
-    /* .services-items .service-item {
-        padding: 50px;
-    } */
 
     .services-items .service-item {  
-        padding: 40px 42px 40px 42px;
+        padding: 32px 38px 32px 38px;
     }
 
 }
 
-  
+/*For galaxy fold*/
+@media only screen and (min-width: 280px) {
+    
+  }

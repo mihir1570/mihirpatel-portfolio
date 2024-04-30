@@ -653,7 +653,8 @@
 }
 
 .la-bezier-curve:before {
-    content: "\f55b"
+    content: "\f55b";
+    margin-left: 55%;
 }
 
 .la-bible:before {
@@ -1313,7 +1314,8 @@
 }
 
 .la-code:before {
-    content: "\f121"
+    content: "\f121";
+    margin-left: 55%;
 }
 
 .la-code-branch:before {
@@ -3477,7 +3479,8 @@
 }
 
 .la-mobile:before {
-    content: "\f10b"
+    content: "\f10b";
+    margin-left: 55%;
 }
 
 .la-mobile-alt:before {
