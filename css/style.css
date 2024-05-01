@@ -1241,7 +1241,7 @@ body .body-overlay {
 .testimonial-item .testimonial-item-inner {
     border: 2px solid #565656;
     border-radius: 30px;
-    padding: 50px 50px 43px 50px;
+    padding: 36px 36px 32px 36px;
 }
 
 .testimonial-item .testimonial-item-inner .author {
@@ -1275,7 +1275,7 @@ body .body-overlay {
 }
 
 .testimonial-item .testimonial-item-inner>p {
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
     font-weight: 300;
     line-height: 36px;
