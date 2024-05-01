@@ -360,6 +360,11 @@ function setupPopup(popupBtnId, popupCardId, closeBtnId, overlayId) {
 }
 
 setupPopup('popupBtn', 'popupCard', 'closeBtn', 'overlay');
+setupPopup('popupBtn2', 'popupCard2', 'closeBtn2', 'overlay2');
+setupPopup('popupBtn3', 'popupCard3', 'closeBtn3', 'overlay3');
+setupPopup('popupBtn4', 'popupCard4', 'closeBtn4', 'overlay4');
+setupPopup('popupBtn5', 'popupCard5', 'closeBtn5', 'overlay5');
+
 
 
 

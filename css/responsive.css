@@ -434,8 +434,8 @@
     .popup-card {
         width: 94%;
         max-width: none;
-        height: auto;
-        max-height: 90vh;
+        height: 100%;
+        max-height: 100vh;
     }
 
     .close-icon {
@@ -566,6 +566,29 @@
 }
 
 @media (max-width: 425px) {
+
+    .popup-card {
+        width: 94%;
+        max-width: none;
+        height: 100%;
+        max-height: 100vh;
+    }
+
+    .close-icon {
+        top: 2px; /* Adjust top spacing for smaller devices */
+        right: 10px; /* Adjust right spacing for smaller devices */
+        font-size: 30px; /* Reduce font size for smaller devices */
+    }
+    
+    .subtitle {
+        margin-bottom: 40px;
+    }
+
+    .section-header h1 {
+        font-size: 38px;
+        line-height: 1.4;
+    }
+
     .comments-area .comments .comments-list .comment-item .comment-body .comment-content h4 {
         flex-direction: column;
         justify-content: flex-start;

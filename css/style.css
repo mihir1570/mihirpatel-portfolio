@@ -2361,25 +2361,12 @@ body .body-overlay {
     }
 }
 
+
+/* -------// POPUP CSS //---------- */
 /* Hide scrollbar */
 .popup-card::-webkit-scrollbar {
     display: none;
-    /* Hide scrollbar for Chrome, Safari, and Opera */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Close button styles */
 .close-icon {
     position: absolute;
@@ -2400,8 +2387,6 @@ body .body-overlay {
     transform: rotate(90deg);
     color: #28E98C;
 }
-
-
 
 /* Popup card styles */
 .popup-card {
