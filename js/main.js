@@ -308,3 +308,60 @@ document.addEventListener('DOMContentLoaded', function () {
 
     type(); // Start the typing effect
 });
+
+
+function setupPopup(popupBtnId, popupCardId, closeBtnId, overlayId) {
+    var popupBtn = document.getElementById(popupBtnId);
+    var popupCard = document.getElementById(popupCardId);
+    var closeBtn = document.getElementById(closeBtnId);
+    var overlay = document.getElementById(overlayId);
+    var contentWrapper = popupCard.querySelector('.card-content');
+
+    function adjustPopupSize() {
+        var contentHeight = contentWrapper.offsetHeight;
+        var windowHeight = window.innerHeight;
+        var maxPopupHeight = windowHeight * 0.5; // 80% of the window height
+        if (contentHeight > maxPopupHeight) {
+            popupCard.style.maxHeight = maxPopupHeight + 'px';
+        } else {
+            popupCard.style.height = 'auto';
+            popupCard.style.maxHeight = 'none';
+        }
+    }
+
+    function closePopup() {
+        popupCard.style.display = 'none';
+        overlay.style.display = 'none';
+    }
+
+    popupBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        popupCard.style.display = 'block';
+        overlay.style.display = 'block';
+        adjustPopupSize();
+    });
+
+    closeBtn.addEventListener('click', closePopup);
+
+    overlay.addEventListener('click', closePopup);
+
+    document.body.addEventListener('click', function(event) {
+        if (!popupCard.contains(event.target) && event.target !== popupBtn) {
+            closePopup();
+        }
+    });
+
+    window.addEventListener('resize', adjustPopupSize);
+
+    // Close popup on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        closePopup();
+    });
+}
+
+setupPopup('popupBtn', 'popupCard', 'closeBtn', 'overlay');
+
+
+
+
+

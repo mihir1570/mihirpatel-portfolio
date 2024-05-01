@@ -185,6 +185,29 @@
 
 @media (max-width: 767px) {
 
+    .popup-card {
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .section-content {
+        font-size: 16px;
+    }
+
+    .close-icon {
+        top: 2px;
+        right: 8px;
+        font-size: 34px;
+    }
+
     .responsive-sidebar-menu .sidebar-menu-inner {
         max-width: 300px;
         width: 100%;
@@ -407,6 +430,20 @@
 }
 
 @media (max-width: 584px) {
+
+    .popup-card {
+        width: 94%;
+        max-width: none;
+        height: auto;
+        max-height: 90vh;
+    }
+
+    .close-icon {
+        top: 2px; /* Adjust top spacing for smaller devices */
+        right: 10px; /* Adjust right spacing for smaller devices */
+        font-size: 30px; /* Reduce font size for smaller devices */
+    }
+    
     .subtitle {
         margin-bottom: 40px;
     }
