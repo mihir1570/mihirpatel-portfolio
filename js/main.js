@@ -310,6 +310,53 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+
+function setupCharacterCount() {
+    const messageTextarea = document.getElementById('message');
+    const charCountElement = document.getElementById('charCount');
+
+    messageTextarea.addEventListener('input', function(event) {
+        const message = this.value;
+        const messageLength = message.length;
+        const maxCharacters = 1000;
+
+        charCountElement.textContent = messageLength + '/' + maxCharacters;
+
+        // Change color if max characters exceeded
+        if (messageLength > maxCharacters) {
+            charCountElement.style.color = 'red';
+            // Trim the message to 1000 characters
+            this.value = message.substring(0, maxCharacters);
+        } else {
+            charCountElement.style.color = ''; // Reset color
+        }
+
+        // Show the character count if it's not visible
+        charCountElement.style.display = 'inline';
+    });
+
+    messageTextarea.addEventListener('paste', function(event) {
+        const pastedData = event.clipboardData.getData('text/plain');
+        const message = this.value + pastedData;
+        const maxCharacters = 1000;
+
+        if (message.length > maxCharacters) {
+            event.preventDefault();
+            return false;
+        }
+    });
+}
+// Call the setup function when the document is ready
+document.addEventListener('DOMContentLoaded', setupCharacterCount);
+
+
+
+
+
+
+
+// Popup Function //
 function setupPopup(popupBtnId, popupCardId, closeBtnId, overlayId) {
     var popupBtn = document.getElementById(popupBtnId);
     var popupCard = document.getElementById(popupCardId);
