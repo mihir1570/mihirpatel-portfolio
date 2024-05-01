@@ -266,3 +266,45 @@ function scroll_animations() {
     });
 }
 scroll_animations();
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const jobTitles = ['Web Developer', 'Frontend Dev', 'Flutter Dev'];
+    let index = 0;
+
+    function type() {
+        const text = jobTitles[index];
+        const titleElement = document.getElementById('job-title');
+        const textLength = text.length;
+        let i = 0;
+
+        function typingEffect() {
+            if (i < textLength) {
+                titleElement.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typingEffect, 100); // Adjust typing speed here (milliseconds)
+            } else {
+                setTimeout(erase, 1000); // Wait before erasing
+            }
+        }
+
+        function erase() {
+            if (i >= 0) {
+                const newText = text.substring(0, i);
+                titleElement.innerHTML = newText;
+                i--;
+                setTimeout(erase, 50); // Adjust erasing speed here (milliseconds)
+            } else {
+                index++;
+                if (index >= jobTitles.length) {
+                    index = 0; // Loop back to the beginning
+                }
+                setTimeout(type, 500); // Wait before typing next title
+            }
+        }
+
+        typingEffect();
+    }
+
+    type(); // Start the typing effect
+});
