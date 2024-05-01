@@ -2335,9 +2335,9 @@ body .body-overlay {
 /* Responsive adjustments */
 @media only screen and (max-width: 768px) {
     #job-title {
-        font-size: 1.5em; /* Decrease font size for smaller screens */
-        white-space: normal; /* Allow wrapping to next line */
-        text-align: center; /* Center-align text on smaller screens */
+        font-size: 1.4em;
+        white-space: normal;
+        text-align: center;
     }
 }
 

@@ -520,6 +520,7 @@
         z-index: 0;
         position: absolute;
     }
+   
 
     /* .services-items .service-item {  
         padding: 40px 40px 40px 40px;
@@ -613,6 +614,11 @@
         display: none;
     }
 
+    .hero-section .hero-content .go-to-project-btn {
+        width: 130px;
+        height: 130px;
+        padding: 10px;
+    }
 
     /* .services-items .service-item {  
         padding: 32px 38px 32px 38px;
