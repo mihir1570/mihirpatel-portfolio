@@ -269,7 +269,7 @@ scroll_animations();
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    const jobTitles = ['Web Developer', 'Frontend Dev', 'Flutter Dev'];
+    const jobTitles = ['Web Developer', 'Flutter Developer'];
     let index = 0;
 
     function type() {
