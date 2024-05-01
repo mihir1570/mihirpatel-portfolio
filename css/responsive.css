@@ -401,9 +401,9 @@
         position: absolute;
     }
 
-    .services-items .service-item {  
+    /* .services-items .service-item {  
         padding: 32px 36px 32px 36px;
-    }
+    } */
 }
 
 @media (max-width: 584px) {
@@ -614,9 +614,9 @@
     }
 
 
-    .services-items .service-item {  
+    /* .services-items .service-item {  
         padding: 32px 38px 32px 38px;
-    }
+    } */
 
 }
 
