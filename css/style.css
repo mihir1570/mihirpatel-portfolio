@@ -2287,15 +2287,7 @@ body .body-overlay {
 
 
 
-
-
-
-
-
-
 /* ------// New Heropage Background design CSS//------- */
-
-
 .grid-svg {
     background-image: url(../images/grid-svg.svg);
     z-index: 1;
@@ -2329,16 +2321,6 @@ body .body-overlay {
         blink-caret .75s step-end infinite;
 }
 
-/*Live text writer heropage*/
-/* Responsive adjustments */
-@media only screen and (max-width: 768px) {
-    #job-title {
-        font-size: 1.3em;
-        white-space: normal;
-        text-align: center;
-    }
-}
-
 @keyframes typing {
     from {
         width: 0
@@ -2367,6 +2349,7 @@ body .body-overlay {
 .popup-card::-webkit-scrollbar {
     display: none;
 }
+
 /* Close button styles */
 .close-icon {
     position: absolute;
@@ -2453,7 +2436,8 @@ body .body-overlay {
 }
 
 .section-divider:hover {
-    border-color: rgb(40, 233, 140); /* Change color on hover */
+    border-color: rgb(40, 233, 140);
+    /* Change color on hover */
 }
 
 .internship-info,
@@ -2476,6 +2460,10 @@ body .body-overlay {
     font-size: 12px;
     margin-right: 10px;
 } */
+
+
+
+
 
 
 
