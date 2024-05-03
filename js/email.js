@@ -90,7 +90,7 @@ function sendEmail() {
 
     // Form validation
     if (!fullName && !email && !phoneNumber && !subject && !message) {
-        alert('Please fill in at least one field.');
+        showToast('success', 'Your message was sent successfully.');
         return;
     }
     if (!fullName) {
