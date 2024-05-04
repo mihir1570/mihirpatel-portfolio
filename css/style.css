@@ -1190,6 +1190,11 @@ body .body-overlay {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.portfolio-items .portfolio-item .portfolio-item-inner img:hover{
+    transform: scale(1.07);
 }
 
 .portfolio-items .portfolio-item .portfolio-item-inner .portfolio-categories {
