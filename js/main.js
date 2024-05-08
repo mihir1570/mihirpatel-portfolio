@@ -1,44 +1,44 @@
 
-$(function(){
+$(function () {
 
     $(window).on('load', function () {
         $('.page-loader').delay('500').fadeOut(1000);
     });
 
-    $(document).ready(function() {
+    $(document).ready(function () {
 
-        $(document).on('click', '.icon-menu', function() {
+        $(document).on('click', '.icon-menu', function () {
             $('.responsive-sidebar-menu').addClass('active');
         });
-        $(document).on('click', '.responsive-sidebar-menu .overlay', function() {
+        $(document).on('click', '.responsive-sidebar-menu .overlay', function () {
             $('.responsive-sidebar-menu').removeClass('active');
         });
 
-        $(document).on('click', '.menu li .scroll-to', function() {
+        $(document).on('click', '.menu li .scroll-to', function () {
             $('.responsive-sidebar-menu').removeClass('active');
         })
 
 
-        $(document).on('click', ".color-boxed a", function() {
+        $(document).on('click', ".color-boxed a", function () {
             $(".color-boxed a").removeClass("clr-active");
             $(this).addClass("clr-active");
         });
-        
-        $(document).on('click', ".global-color .setting-toggle", function() {
+
+        $(document).on('click', ".global-color .setting-toggle", function () {
             $(".global-color").addClass("active");
         });
 
-        $(document).on('click', ".global-color .inner .overlay, .global-color .inner .global-color-option .close-settings", function() {
+        $(document).on('click', ".global-color .inner .overlay, .global-color .inner .global-color-option .close-settings", function () {
             $(".global-color").removeClass("active");
         });
 
     });
 
-    $(window).scroll(function() {
-            
+    $(window).scroll(function () {
+
         var windscroll = $(window).scrollTop();
         if (windscroll >= 0) {
-            $('.page-section').each(function(i) {
+            $('.page-section').each(function (i) {
                 if ($(this).position().top <= windscroll - -1) {
                     $('.scroll-nav .scroll-to.active').removeClass('active');
                     $('.scroll-nav .scroll-to').eq(i).addClass('active');
@@ -56,7 +56,7 @@ $(function(){
         }
 
         if (windscroll >= 0) {
-            $('.scroll-to-page').each(function(i) {
+            $('.scroll-to-page').each(function (i) {
 
                 var wscrolldecress = windscroll + 1;
                 // console.log(wscrolldecress);
@@ -88,28 +88,28 @@ $(function(){
             loop: false,
             nav: false,
             dots: false,
-            onInitialized  : counter, //When the plugin has initialized.
-            onTranslated : counter //When the translation of the stage has finished.
+            onInitialized: counter, //When the plugin has initialized.
+            onTranslated: counter //When the translation of the stage has finished.
         });
 
-        $('.testimonial-nav .next').on('click', function() {
+        $('.testimonial-nav .next').on('click', function () {
             testimonial.trigger('next.owl.carousel');
         })
-        $('.testimonial-nav .prev').on('click', function() {
+        $('.testimonial-nav .prev').on('click', function () {
             testimonial.trigger('prev.owl.carousel', [300]);
         })
 
 
         function counter(event) {
-            var element   = event.target;         // DOM element, in this example .owl-carousel
-            var items     = event.item.count;     // Number of items
-            var item      = event.item.index + 1;     // Position of the current item
-        
-        // it loop is true then reset counter from 1
-        if(item > items) {
+            var element = event.target;         // DOM element, in this example .owl-carousel
+            var items = event.item.count;     // Number of items
+            var item = event.item.index + 1;     // Position of the current item
+
+            // it loop is true then reset counter from 1
+            if (item > items) {
                 item = item - items
-        }
-        $('#testimonial-slide-count').html("<span class='left'>"+item+"</span> / "+items)
+            }
+            $('#testimonial-slide-count').html("<span class='left'>" + item + "</span> / " + items)
         }
     }
 
@@ -171,7 +171,7 @@ $(function(){
 
     //     var offset = gsap.getProperty("#smooth-content", "y");
     //     var position = jQuery(target).get(0).getBoundingClientRect().top - offset;
-    
+
 
     //     e.addEventListener('click', (e) => {
     //         e.preventDefault();
@@ -199,8 +199,8 @@ $(function(){
     //         });
     //     });
 
-        
-    
+
+
     // });
 
 });
@@ -316,7 +316,7 @@ function setupCharacterCount() {
     const messageTextarea = document.getElementById('message');
     const charCountElement = document.getElementById('charCount');
 
-    messageTextarea.addEventListener('input', function(event) {
+    messageTextarea.addEventListener('input', function (event) {
         const message = this.value;
         const messageLength = message.length;
         const maxCharacters = 1000;
@@ -336,7 +336,7 @@ function setupCharacterCount() {
         charCountElement.style.display = 'inline';
     });
 
-    messageTextarea.addEventListener('paste', function(event) {
+    messageTextarea.addEventListener('paste', function (event) {
         const pastedData = event.clipboardData.getData('text/plain');
         const message = this.value + pastedData;
         const maxCharacters = 1000;
@@ -375,7 +375,7 @@ function setupPopup(popupBtnId, popupCardId, closeBtnId, overlayId) {
         overlay.style.display = 'none';
     }
 
-    popupBtn.addEventListener('click', function(event) {
+    popupBtn.addEventListener('click', function (event) {
         event.preventDefault();
         popupCard.style.display = 'block';
         overlay.style.display = 'block';
@@ -386,7 +386,7 @@ function setupPopup(popupBtnId, popupCardId, closeBtnId, overlayId) {
 
     overlay.addEventListener('click', closePopup);
 
-    document.body.addEventListener('click', function(event) {
+    document.body.addEventListener('click', function (event) {
         if (!popupCard.contains(event.target) && event.target !== popupBtn) {
             closePopup();
         }
@@ -395,7 +395,7 @@ function setupPopup(popupBtnId, popupCardId, closeBtnId, overlayId) {
     window.addEventListener('resize', adjustPopupSize);
 
     // Close popup on page load
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         closePopup();
     });
 }
@@ -404,6 +404,11 @@ setupPopup('popupBtn2', 'popupCard2', 'closeBtn2', 'overlay2');
 setupPopup('popupBtn3', 'popupCard3', 'closeBtn3', 'overlay3');
 setupPopup('popupBtn4', 'popupCard4', 'closeBtn4', 'overlay4');
 setupPopup('popupBtn5', 'popupCard5', 'closeBtn5', 'overlay5');
+
+
+
+
+
 
 
 

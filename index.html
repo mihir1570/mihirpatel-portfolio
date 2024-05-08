@@ -528,15 +528,24 @@
                     </div>
                 </section>
 
-                <!-- <section class="page-section scroll-to-page" id="skills">
+                <section class="page-section scroll-to-page" id="skills">
                     <div class="custom-container">
                         <div class="content-width">
-
-                       
-
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-shapes"></i> Live Projects
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">My
+                                    <span>Live Projects</span>
+                                </h1>
+                            </div>
+                            <!-- Paste the provided HTML code here -->
+                            <iframe src="./afterhover.html" class="scroll-animation" data-animation="fade_from_right"
+                                frameborder="0" scrolling="no" style="width: 100%; height: 60vh;"></iframe>
                         </div>
                     </div>
-                </section> -->
+                </section>
+
 
                 <section class="portfolio-area page-section scroll-to-page" id="portfolio">
                     <div class="custom-container">
@@ -1031,7 +1040,57 @@
                                 </div>
                             </div>
 
+
+                            <!-- -------// Hover on table effect //------ -->
+
+                            <!-- <nav>
+                                <ul>
+
+                                    <li>
+                                        <div class="link">
+                                            <span>Noddles</span>
+                                            <img src="./images/arrow.png" alt="" height="25">
+                                            <div class="hover-reveal image01">
+                                                <img class="hidden-img" src="images/1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="link">
+                                            <span>Fresh Soup</span>
+                                            <img src="./images/arrow.png" alt="" height="25">
+                                            <div class="hover-reveal image0">
+                                                <img class="hidden-img" src="./images/2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="link">
+                                            <span>Plumeria</span>
+                                            <img src="./images/arrow.png" alt="" height="25">
+                                            <div class="hover-reveal image01">
+                                                <img class="hidden-img" src="./images/3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="link">
+                                            <span>Bisciut</span>
+                                            <img src="./images/arrow.png" alt="" height="25">
+                                            <div class="hover-reveal image01">
+                                                <img class="hidden-img" src="./images/4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </nav> -->
+
                         </div>
+
                     </div>
                 </section>
 
@@ -1045,7 +1104,7 @@
                                 <h1 class="scroll-animation" data-animation="fade_from_bottom">Development<span>
                                         Certifications</span></h1>
                             </div>
-                            
+
 
                             <div class="testimonial-slider-wrap scroll-animation" data-animation="fade_from_bottom">
                                 <div class="owl-carousel testimonial-slider owl-theme">
@@ -1275,6 +1334,7 @@
                     </div>
                 </section>
 
+
             </div>
         </div>
     </main>
@@ -1295,7 +1355,65 @@
     <script src="js/ajax-form.js"></script>
     <script src="js/color.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script>
+        function initializeCustomCursor() {
+            const cursor = document.querySelector(".cursor");
+            const cursorMedias = document.querySelectorAll(".cursor__media");
+            const navLinks = document.querySelectorAll(".nav__link");
+
+            gsap.set(cursor, {
+                xPercent: -50,
+                yPercent: -50,
+                scale: 0
+            });
+
+            const setCursorX = gsap.quickTo(cursor, "x", {
+                duration: 0.6,
+                ease: "expo"
+            });
+
+            const setCursorY = gsap.quickTo(cursor, "y", {
+                duration: 0.6,
+                ease: "expo"
+            });
+
+            window.addEventListener("mousemove", (e) => {
+                setCursorX(e.pageX);
+                setCursorY(e.pageY);
+            });
+
+            const tl = gsap.timeline({
+                paused: true
+            });
+
+            tl.to(cursor, {
+                scale: 1,
+                opacity: 1,
+                duration: 0.5,
+                ease: "expo.inOut"
+            });
+
+            navLinks.forEach((navLink, i) => {
+                navLink.addEventListener("mouseover", () => {
+                    cursorMedias[i].classList.add("active");
+                    tl.play();
+                });
+            });
+
+            navLinks.forEach((navLink, i) => {
+                navLink.addEventListener("mouseout", () => {
+                    tl.reverse();
+                    cursorMedias[i].classList.remove("active");
+                });
+            });
+        }
+        // Call the function to initialize the custom cursor functionality
+        initializeCustomCursor();
+    </script>
 
 </body>
 
