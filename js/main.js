@@ -270,7 +270,7 @@ scroll_animations();
 
 // Typewriter Effect
 document.addEventListener('DOMContentLoaded', function () {
-    const jobTitles = ['Web Developer', 'Flutter Developer'];
+    const jobTitles = ['Frontend Developer', 'Web Developer'];
     let index = 0;
 
     function type() {
