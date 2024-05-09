@@ -268,8 +268,9 @@ function scroll_animations() {
 scroll_animations();
 
 
+// Typewriter Effect
 document.addEventListener('DOMContentLoaded', function () {
-    const jobTitles = ['Frontend Developer', 'Flutter Developer'];
+    const jobTitles = ['Web Developer', 'Flutter Developer'];
     let index = 0;
 
     function type() {
