@@ -2365,10 +2365,8 @@ body .body-overlay {
     background: none;
     border: none;
     color: white;
-    /* Primary color */
     z-index: 2;
     transition: transform 0.3s;
-    /* Smooth transition for the icon */
 }
 
 .close-icon:hover {
@@ -2383,17 +2381,13 @@ body .body-overlay {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.7);
-    /* Background color with transparency */
-    box-shadow: 0 8px 32px 0 rgba(40, 233, 140, 0.37);
-    /* Box shadow using primary color */
-    backdrop-filter: blur(16px);
-    /* Backdrop filter for blur effect */
-    -webkit-backdrop-filter: blur(16px);
-    /* WebKit backdrop filter for blur effect */
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    /* Border */
+
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
     max-width: 90%;
     width: 90%;
     max-height: 90%;
@@ -2403,19 +2397,16 @@ body .body-overlay {
     animation: fadeIn 0.3s ease forwards;
     font-family: Arial, sans-serif;
     padding: 20px;
-    /* Proper padding */
 }
 
 .card-content {
     color: #fff;
-    /* Text color */
 }
 
 .project-title {
     font-size: 24px;
     margin-bottom: 15px;
     color: #28e98c;
-    /* Primary color */
 }
 
 .project-section {
@@ -2431,8 +2422,6 @@ body .body-overlay {
 
 .section-content {
     color: #fff;
-    /* font-size: 16px; */
-    /* Text color */
 }
 
 .section-divider {
@@ -2442,7 +2431,6 @@ body .body-overlay {
 
 .section-divider:hover {
     border-color: rgb(40, 233, 140);
-    /* Change color on hover */
 }
 
 .internship-info,
