@@ -409,6 +409,12 @@ setupPopup('popupBtn5', 'popupCard5', 'closeBtn5', 'overlay5');
 
 
 
+    document.getElementById("liveIcon").addEventListener("click", function() {
+        window.location.href = "live.html";
+    });
+
+
+
 
 
 

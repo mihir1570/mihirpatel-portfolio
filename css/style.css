@@ -1193,11 +1193,12 @@ body .body-overlay {
     transition: transform 0.7s ease;
 }
 
-.portfolio-items .portfolio-item .portfolio-item-inner img:hover{
+.portfolio-items .portfolio-item .portfolio-item-inner img:hover {
     transform: scale(1.07);
 }
 
 .portfolio-items .portfolio-item .portfolio-item-inner .portfolio-categories {
+    margin-right: 52px;
     position: absolute;
     display: flex;
     flex-wrap: wrap;
@@ -2457,8 +2458,27 @@ body .body-overlay {
 
 
 
-  
+.live-icon {
+    height: 36px;
+    width: 36px;
+    position: fixed;
+    bottom: 30%;
+    right: 6%;
+    cursor: pointer;
+}
 
+@media screen and (max-width: 404px) {
+    .live-icon {
+        bottom: 33%;
+        right: 7%;
+    }
+}
 
+@media screen and (max-width: 280px) {
+    .live-icon {
+        bottom: 33%;
+        right: 7%;
+    }
+}
 
 
