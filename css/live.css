@@ -99,7 +99,7 @@ img {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
     max-width: 1120px;
-    margin-inline: 1.5rem;
+    /* margin-inline: 1.5rem; */
 }
 
 .grid {
@@ -195,12 +195,16 @@ img {
     row-gap: 2rem;
 }
 
+
+
+
+
+
 .projects__card {
     padding: 1rem 1rem 2rem;
     border-radius: 0.75rem;
     transition: background-color 0.4s;
     border: 2px solid #565656;
-    /* border-radius: 30px; */
 
 }
 
@@ -305,6 +309,7 @@ img {
     .projects__container {
         grid-template-columns: repeat(2, 350px);
     }
+
 }
 
 @media screen and (min-width: 1150px) {
