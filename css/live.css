@@ -196,17 +196,36 @@ img {
 }
 
 
-
-
-
-
 .projects__card {
-    padding: 1rem 1rem 2rem;
+    padding: 1rem;
     border-radius: 0.75rem;
     transition: background-color 0.4s;
     border: 2px solid #565656;
-
+    height: 56vh;
+    overflow: auto; /* Enable scrolling and hide scroll bars */
 }
+
+/* Hide scroll bars */
+.projects__card::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* Optionally, you can style the thumb and track to blend with the background */
+.projects__card::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Hide thumb */
+}
+
+.projects__card::-webkit-scrollbar-track {
+    background-color: transparent; /* Hide track */
+}
+
+
+
+
+
+
+.projects__card .scroll-content {}
 
 .projects__image {
     position: relative;
