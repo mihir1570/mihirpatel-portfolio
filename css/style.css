@@ -2484,6 +2484,7 @@ body .body-overlay {
 
 
 
+/* Default styles */
 .live-project-title {
     color: aliceblue;
 }
@@ -2502,12 +2503,26 @@ body .body-overlay {
     width: 0; /* Initial width is 0 */
     height: 2px;
     background-color: #28e98c;
-    transition: width 0.5s ease; /* Transition for underline animation */
+    transition: width 0.3s ease; /* Transition for underline animation */
 }
 
 .live-project-link:hover::after {
     width: 100%; /* Increase width to 100% on hover for underline animation */
 }
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+    .live-project-title {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+    }
+
+    .live-project-title img {
+        margin-left: 10px; /* Add space between the icon and text */
+    }
+}
+
 
 
 
