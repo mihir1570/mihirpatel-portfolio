@@ -1367,7 +1367,7 @@ body .body-overlay {
 }
 
 .pricing-table-items .pricing-table {
-    border: 1px solid #565656;
+    border: 1.5px solid #565656;
     border-radius: 30px;
     padding: 37px 34px 40px 34px;
     height: 100%;
