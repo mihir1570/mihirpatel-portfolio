@@ -416,37 +416,6 @@ setupPopup('popupBtn5', 'popupCard5', 'closeBtn5', 'overlay5');
 
 
 
-// lazyImages loading
-    document.addEventListener("DOMContentLoaded", function() {
-        const lazyImages = document.querySelectorAll("img.lazy");
-        const options = {
-            threshold: 0,
-            rootMargin: "0px 0px 300px 0px" // Adjust this value as needed
-        };
-    
-        const lazyLoad = target => {
-            const io = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const img = entry.target;
-                        const src = img.getAttribute("data-src");
-                        img.setAttribute("src", src);
-                        img.classList.remove("lazy");
-                        observer.unobserve(img);
-                    }
-                });
-            }, options);
-    
-            io.observe(target);
-        };
-    
-        lazyImages.forEach(lazyLoad);
-    });
-    
-
-
-
-
 
 
     
