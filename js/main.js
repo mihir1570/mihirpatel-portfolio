@@ -270,7 +270,7 @@ scroll_animations();
 
 // Typewriter Effect
 document.addEventListener('DOMContentLoaded', function () {
-    const jobTitles = ['Web Developer', 'MEAN Developer'];
+    const jobTitles = ['Web Developer', 'Mean Developer'];
     let index = 0;
 
     function type() {
