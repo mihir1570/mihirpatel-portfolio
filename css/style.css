@@ -1140,8 +1140,8 @@ body .body-overlay {
 }
 
 .skills .skill .skill-inner img {
-    height: 70px;
-    width: 70px;
+    /* height: 70px;
+    width: 70px; */
     display: block;
     margin: auto auto 29px auto;
 }
