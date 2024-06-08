@@ -29,6 +29,8 @@
     * @Keyframe
 
 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 :root {
     --primary_color: #28e98c;
 }
@@ -841,7 +843,7 @@ main.drake-main {
 }
 
 .hero-section .hero-content h1 {
-    font-size: 78px;
+    font-size: 72px;
     letter-spacing: -0.2px;
     line-height: 90px;
     margin-bottom: 43px;
@@ -2522,11 +2524,13 @@ body .body-overlay {
     .live-project-title {
         display: flex;
         align-items: center;
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .live-project-title img {
-        margin-left: 10px;
+        height: auto;
+        width: 40px;
+        /* margin-left: 10px; */
         /* Add space between the icon and text */
     }
 }
