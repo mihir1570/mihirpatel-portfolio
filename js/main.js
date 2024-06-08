@@ -206,7 +206,6 @@ $(function () {
 });
 
 
-
 function scroll_animations() {
     // var allow_on_mobile = !0;
     // if (typeof config_scroll_animation_on_mobile !== "undefined") allow_on_mobile = config_scroll_animation_on_mobile;
@@ -412,6 +411,9 @@ document.getElementById("liveIcon").addEventListener("click", function () {
     window.location.href = "liveprojects.html";
 });
 
+// Dynamic Date
+const liveDate = new Date();
+document.getElementById("live-year").innerHTML = liveDate.getFullYear();
 
 
 
