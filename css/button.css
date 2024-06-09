@@ -11,16 +11,17 @@
 }
 
 .glowing-btn {
+    margin-top: 20px;
     position: relative;
     color: var(--glow-color);
     cursor: pointer;
-    padding: 0.55em 1.5em;
+    padding: 0.47em 1.45em;
     border: 0.15em solid var(--glow-color);
     border-radius: 0.45em;
     background: none;
     perspective: 2em;
     font-family: "Raleway", sans-serif;
-    font-size: 1em;
+    font-size: 0.96em;
     font-weight: 600;
     letter-spacing: 0.1em;
     display: inline-block;
