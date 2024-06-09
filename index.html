@@ -57,7 +57,9 @@
     <link rel="stylesheet" href="./css/live.css">
 
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/button.css">
 
@@ -239,7 +241,7 @@
             <h3 style="color: aliceblue; font-weight: 500;">Mihir Patel</h3>
             <span class="designation" style="color: #999999;">Web Developer</span>
         </div>
-        <img class="me" src="images/mihir_profile_image.webp" alt="Me">
+        <img class="me" src="images/mihir_profile_image.webp" alt="Me" loading="lazy">
 
         <h2 class="email">mihirpatel6pg6@gmail.com</h2>
         <h2 class="address">Ahmedabad, GJ</h2>
@@ -289,7 +291,7 @@
                         <p style="font-size: 14px; margin-bottom: 0px;">Web developer</p>
                     </div>
 
-                    <img class="me" src="images/mihir_profile_image.webp" alt="Me">
+                    <img class="me" src="images/mihir_profile_image.webp" alt="Me" loading="lazy">
 
                     <h2 class="email">mihirpatel6pg6@gmail.com</h2>
                     <h2 class="address">Ahmedanad, GJ</h2>
