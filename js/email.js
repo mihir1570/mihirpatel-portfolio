@@ -48,6 +48,7 @@ function sendEmail() {
     // Email sending
     Email.send({
         SecureToken: "78b96a57-3059-4bfd-a083-4a3355123550",
+        // SecureToken: "af707083-1fb5-4947-bb77-623e483d7da8",
         To: 'mihirpatel6pg6@gmail.com',
         From: 'mihirpatel6pg6@gmail.com',
         Subject: `New Inquiry from ${fullName}`,
