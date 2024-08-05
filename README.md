@@ -1,9 +1,11 @@
 # Mihir Patel - Portfolio Website
 
 ## Overview
+
 Welcome to my portfolio website! This repository contains the source code for my personal portfolio, showcasing my projects, skills, and experiences as a web developer. The website is built using HTML, CSS, and JavaScript, and utilizes various libraries and frameworks to enhance functionality and design.
 
 ## Table of Contents
+
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
@@ -15,6 +17,7 @@ Welcome to my portfolio website! This repository contains the source code for my
 - [Contact](#contact)
 
 ## Features
+
 - **Home Page:** Introduction and summary of my professional background.
 - **Projects:** A detailed showcase of my projects, including descriptions, technologies used, and links to live demos or repositories.
 - **Skills:** A list of my technical skills and proficiencies.
@@ -22,7 +25,9 @@ Welcome to my portfolio website! This repository contains the source code for my
 - **Contact:** A contact form or my contact details for reaching out.
 
 ## Technologies Used
+
 - **Frontend:**
+
   - HTML
   - CSS
   - JavaScript
@@ -33,6 +38,7 @@ Welcome to my portfolio website! This repository contains the source code for my
   - Google Fonts: 'Inter', sans-serif
 
 - **Backend & Database:**
+
   - Node.js
   - MongoDB
   - MySQL
@@ -41,24 +47,29 @@ Welcome to my portfolio website! This repository contains the source code for my
   - GitHub
 
 ## Setup and Installation
+
 To set up this project locally, follow these steps:
 
 1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/mihir1570/mihirpatel-portfolio.git
-    cd mihirpatel-portfolio
-    ```
+
+   ```bash
+   git clone https://github.com/mihir1570/mihirpatel-portfolio.git
+   cd mihirpatel-portfolio
+   ```
 
 2. **Open your browser:**
-    Open `index.html` in your preferred browser to view the portfolio.
+   Open `index.html` in your preferred browser to view the portfolio.
 
 ## Usage
+
 To use or customize this portfolio template for your own purposes:
+
 1. Fork the repository.
 2. Update the content in the HTML/CSS/JS files as needed.
 3. Add your own projects, skills, and personal information.
 
 ## Project Structure
+
 ```plaintext
 mihirpatel-portfolio/
 ├── css/
@@ -104,8 +115,9 @@ Feel free to reach out to me via email at mihirpatel6pg6@gmail.com or connect wi
 
 ===========================================X===========================================
 
-Thank you for visiting my portfolio! I hope you find the information 
+Thank you for visiting my portfolio! I hope you find the information
 helpful and enjoy exploring my work.
 
 
 
+```

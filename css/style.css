@@ -2519,6 +2519,7 @@ body .body-overlay {
     /* Increase width to 100% on hover for underline animation */
 }
 
+
 /* Media query for mobile devices */
 @media only screen and (max-width: 767px) {
     .live-project-title {
@@ -2534,3 +2535,4 @@ body .body-overlay {
         /* Add space between the icon and text */
     }
 }
+
